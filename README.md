@@ -6,7 +6,8 @@ The BOCS algorithm is a method for finding a global minimizer of an expensive-to
 
 ## Authors
 
-Ricardo Baptista (MIT) and Matthias Poloczek (University of Arizona)\s\s
+Ricardo Baptista (MIT) and Matthias Poloczek (University of Arizona)
+
 E-mails: rsb@mit.edu, poloczek@email.arizona.edu
 
 ## Installation
