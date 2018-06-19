@@ -1,19 +1,20 @@
-### Bayesian Optimization of Combinatorial Structures (BOCS)
+## Bayesian Optimization of Combinatorial Structures (BOCS)
 
-## What is the BOCS algorithm?
+### What is the BOCS algorithm?
 
 The BOCS algorithm is a method for finding a global minimizer of an expensive-to-evaluate black-box function that is defined over discrete inputs given a finite budget of function evaluations. The algorithm combines an adaptive generative model and semidefinite programming techniques for scalability of the acquisition function to large combinatorial domains.
 
-## Authors
+### Authors
 
 Ricardo Baptista (MIT) and Matthias Poloczek (University of Arizona)
+
 E-mails: rsb@mit.edu, poloczek@email.arizona.edu
 
-## Installation
+### Installation
 
 The BOCS algorithm is implemented in MATLAB and only requires the [CVX package](http://cvxr.com/cvx/) to be available in the local path for performing convex optimization. The scripts for comparing to other discrete optimization methods require an installation of [SMAC](http://www.cs.ubc.ca/labs/beta/Projects/SMAC/), the python wrapper [pySMAC](https://github.com/tdomhan/pysmac) and the [bayesopt](https://www.mathworks.com/help/stats/bayesopt.html) function in MATLAB for Bayesian Optimization with the Expected Improvement acquisition function. 
 
-## Example running BOCS on a benchmark problem
+### Example running BOCS on a benchmark problem
 
 We provide an example for running the BOCS algorithm the Ising model sparsification benchmark problem on a 9-node grid graph with a budget of 100 sample evaluations. The code can also be found in the file `scripts/example_ising.m`. 
 
@@ -59,7 +60,7 @@ B_SDP = BOCS(inputs.model, inputs.penalty, inputs, 2, 'sdp');
 
 ```
 
-## Comparison to other discrete optimization algorithms
+### Comparison to other discrete optimization algorithms
 
 To compare BOCS to other algorithms, we provided files in the scripts folder that run all cases for the quadratic programming problem, the Ising model sparsification problem, and the contamination control problem. The algorithms that are compared include:
 
