@@ -63,11 +63,11 @@ B_SDP = BOCS(inputs.model, inputs.penalty, inputs, 2, 'sdp');
 
 To compare BOCS to other algorithms, we provided files in the scripts folder that run all cases for the quadratic programming problem, the Ising model sparsification problem, and the contamination control problem. The algorithms that are compared include:
 
-- RS: Random search [Bergstra & Bengio, 2012](http://www.jmlr.org/papers/v13/bergstra12a.html) 
-- SA: Simulated annealing [Spears, 1993](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.52.6986) [Pankratov & Borodin, 2010](https://link.springer.com/chapter/10.1007/978-3-642-14186-7_19)
-- EI: Expected improvement [Jones et al., 2008](https://link.springer.com/article/10.1023/A:1008306431147) 
-- OLS: Local search [Khanna et al., 1998](https://epubs.siam.org/doi/abs/10.1137/S0097539795286612)
-- PS: Sequential Monte Carlo particle search [Schäfer, 2012](https://dl.acm.org/citation.cfm?id=2414424)
+- RS: Random search ([Bergstra & Bengio, 2012](http://www.jmlr.org/papers/v13/bergstra12a.html))
+- SA: Simulated annealing ([Spears, 1993](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.52.6986)) ([Pankratov & Borodin, 2010](https://link.springer.com/chapter/10.1007/978-3-642-14186-7_19))
+- EI: Expected improvement ([Jones et al., 2008](https://link.springer.com/article/10.1023/A:1008306431147))
+- OLS: Local search ([Khanna et al., 1998](https://epubs.siam.org/doi/abs/10.1137/S0097539795286612))
+- PS: Sequential Monte Carlo particle search ([Schäfer, 2012](https://dl.acm.org/citation.cfm?id=2414424))
 - SMAC ([Hutter et al., 2011](https://dl.acm.org/citation.cfm?id=2177404))
 - BOCS-SA, BOCS-SDP with Bayesian linear regression model
 - BOCS-SA, BOCS-SDP with MLE model
