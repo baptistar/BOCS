@@ -2,7 +2,7 @@
 
 ## What is the BOCS algorithm?
 
-The BOCS algorithm is a method for finding a global minimizer of an expensive-to-evaluate black-box function that is defined over discrete inputs given a finite budget of function evaluations. The algorithm combines an adaptive generative model and semidefinite programming techniques for scalability of the acquisition function to large combinatorial domains.
+The BOCS algorithm is a method for finding a global minimizer of an expensive-to-evaluate black-box function that is defined over discrete inputs given a finite budget of function evaluations. The algorithm combines an adaptive generative model and semidefinite programming techniques for scalability of the acquisition function to large combinatorial domains. For more information on the details of the algorithm, please see the [ICML paper](https://arxiv.org/abs/1806.08838).
 
 ## Authors
 
