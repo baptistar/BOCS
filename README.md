@@ -14,6 +14,8 @@ E-mails: rsb@mit.edu, poloczek@email.arizona.edu
 
 The BOCS algorithm is implemented in MATLAB and only requires the [CVX package](http://cvxr.com/cvx/) to be available in the local path for performing convex optimization. The scripts for comparing to other discrete optimization methods require an installation of [SMAC](http://www.cs.ubc.ca/labs/beta/Projects/SMAC/), the python wrapper [pySMAC](https://github.com/tdomhan/pysmac) and the [bayesopt](https://www.mathworks.com/help/stats/bayesopt.html) function in MATLAB for Bayesian Optimization with the Expected Improvement acquisition function. 
 
+A python implementation of the BOCS algorithm is also available in the BOCSpy folder. The code has been tested with Python 2.7 and 3.5 and requires the [cvxpy](http://www.cvxpy.org) and [cvxopt](http://cvxopt.org) packages.
+
 ## Example running BOCS on a benchmark problem
 
 We provide an example for running the BOCS algorithm the Ising model sparsification benchmark problem on a 9-node grid graph with a budget of 100 sample evaluations. The code can also be run from MATLAB using the file `scripts/example_ising.m`.
@@ -58,6 +60,8 @@ B_SA  = BOCS(inputs.model, inputs.penalty, inputs, 2, 'SA');
 B_SDP = BOCS(inputs.model, inputs.penalty, inputs, 2, 'sdp');
 
 ```
+
+We also provide an example of running the python implementation of BOCS on the binary quadratic programming benchmark problem. The code can be run using the command 'python BOCSpy/example_bqp.py'. The script produces a plot with the convergence results from running BOCS-SA and BOCS-SDP on an instance of the problem. 
 
 ## Comparison to other discrete optimization algorithms
 
