@@ -86,7 +86,7 @@ for ord=1:length(order)
     	end
     end
 
-    validationPlots(inputs_all, n_train, n_test, n_proc)
+    validationPlots(inputs_all, n_train, n_test, n_proc);
 
     %% CONTAMINATION TEST PROBLEM
 
@@ -117,7 +117,7 @@ for ord=1:length(order)
 
     end
 
-    validationPlots(inputs_all, n_train, n_test, n_proc)
+    validationPlots(inputs_all, n_train, n_test, n_proc);
 
     %% ISING MODEL TEST PROBLEM
 
@@ -149,7 +149,7 @@ for ord=1:length(order)
 
     end
 
-    validationPlots(inputs_all, n_train, n_test, n_proc)
+    validationPlots(inputs_all, n_train, n_test, n_proc);
 
 end
 
