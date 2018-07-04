@@ -35,19 +35,19 @@ parfor t=1:n_func
 	% Extract inputs_t
 	inputs_t = inputs_all{t};
 
-    % Generate test samples
-    inputs_t.x_test = sample_models(n_test, n_vars);
-    inputs_t.y_test = inputs_t.model(inputs_t.x_test);
+	% Generate test samples
+	inputs_t.x_test = sample_models(n_test, n_vars);
+	inputs_t.y_test = inputs_t.model(inputs_t.x_test);
 
 	% Generate all training samples 
 	x_train = sample_models(max(n_train), n_vars);
 	y_train = inputs_t.model(x_train);
 
-    % Generate temporary arrays to save data
-    bayes_t = zeros(length(n_train), n_test);
-    mle_t   = zeros(length(n_train), n_test);
-    hs_t    = zeros(length(n_train), n_test);
-    
+	% Generate temporary arrays to save data
+	bayes_t = zeros(length(n_train), n_test);
+	mle_t   = zeros(length(n_train), n_test);
+	hs_t    = zeros(length(n_train), n_test);
+
 	for s=1:length(n_train)
 
 		% Save training samples
@@ -56,13 +56,13 @@ parfor t=1:n_func
 
 		% compute and save results
 		[bayes_t(s,:), mle_t(s,:), hs_t(s,:)] = compare_models(inputs_t);
-        
-    end
-    
-    % Save results
-    bayes_err(:,:,t) = bayes_t;
-    mle_err(:,:,t)   = mle_t;
-    hs_err(:,:,t)    = hs_t;
+
+	end
+
+	% Save results
+	bayes_err(:,:,t) = bayes_t;
+	mle_err(:,:,t)   = mle_t;
+	hs_err(:,:,t)    = hs_t;
 
 end
 

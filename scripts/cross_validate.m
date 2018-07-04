@@ -126,6 +126,9 @@ for ord=1:length(order)
     n_vars  = 24;
     test_name = 'ising';
 
+    % Declare cell to store all inputs
+    inputs_all = cell(n_func,1);
+
     for t=1:n_func
 
         % Set inputs struct for each problem
