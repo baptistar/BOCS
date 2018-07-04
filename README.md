@@ -61,7 +61,7 @@ B_SDP = BOCS(inputs.model, inputs.penalty, inputs, 2, 'sdp');
 
 ```
 
-We also provide an example of running the python implementation of BOCS on the binary quadratic programming benchmark problem. The code can be run using the command 'python BOCSpy/example_bqp.py'. The script produces a plot with the convergence results from running BOCS-SA and BOCS-SDP on an instance of the problem. 
+We also provide an example of running the python implementation of BOCS on the binary quadratic programming benchmark problem. The code can be run using the command `python BOCSpy/example_bqp.py`. The script produces a plot with the convergence results from running BOCS-SA and BOCS-SDP on an instance of the problem. 
 
 ## Comparison to other discrete optimization algorithms
 
